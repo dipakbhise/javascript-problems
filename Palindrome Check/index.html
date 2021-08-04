@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+        let arr = "nitin" ;
+
+        console.log(`main string ${arr}`);
+
+        let split = arr.split('');
+
+        console.log(` string converted to array is ${split}`);
+
+        let reverse = split.reverse();
+
+        console.log(` reverse array ${reverse}`);
+
+        let join = reverse.join('');
+
+        console.log(`join of an array ${join}`);
+
+        if (join === arr) {
+
+            console.log(" join is equal to main string hence it is an palindrome")
+            
+        }else{
+            console.log("join is not equal to main string hence it is not an palindrome");
+        }
+
+
+    </script>
+</body>
+
+</html>
