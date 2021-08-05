@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function Student (name, mname, lname, age, fun){
+
+            this.FirstName = name;
+            this.MiddleName = mname;
+            this.LastName = lname;
+            this.Age = age;
+            this.method = fun;
+
+        }
+
+        let student1 = new Student("Dipak", "Revannath", "Bhise", 23, function (){
+            return `My Name is ${this.FirstName} and my sir name is ${this.LastName} hello`
+        });
+
+        let student2 = new Student("Rushi", "Girju", "Gunjal", 10);
+
+        
+
+        // student1.Nationality = "Indian";
+
+        // student1.method = 
+
+        console.log(student1.method());
+
+        Student.prototype.Nationality = "India"
+
+        console.log(student1.Nationality);
+
+
+    </script>
+    
+</body>
+</html>
